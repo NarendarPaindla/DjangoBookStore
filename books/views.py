@@ -10,3 +10,7 @@ class BooksListView(ListView):
 class BookDetailView(DetailView):
     model=Book
     template_name='detail.html'
+
+class BookCheckoutView(DetailView):
+    model=Book
+    template_name='checkout.html'
