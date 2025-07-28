@@ -19,5 +19,5 @@
 <p><a href="{{ object.follow_author }}">Follow Author</a></p>
 <p>Price: $ {{object.price | floatformat:2}}</p>
 
-<a href="#" class="btn btn-outline-success" role="button" >Buy Now</a>
+<a href="{% url 'checkout' object.pk %}" class="btn btn-outline-success" role="button" >Buy Now</a>
 {% endblock content %}
