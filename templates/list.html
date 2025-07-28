@@ -8,7 +8,7 @@
     <p>{{book.author}}</p>
     <p>{{book.price}}</p>
     <p>
-     <a href="">View Details</a>
+     <a href="{% url 'detail' book.id %}">View Details</a>
     </p>
     
 </div>
